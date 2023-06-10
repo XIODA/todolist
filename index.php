@@ -18,10 +18,10 @@
 
         .main {
             background-color: #CA9CE1;
-            width: 500px;
+            /* width: 500px; */
             height: 40px;
             text-align: center;
-            margin-left: 32%;
+            /* margin-left: 32%; */
             margin-top: 20px;
             padding-top: 20px;
             border-radius: 10px;
@@ -30,10 +30,10 @@
 
         .content {
             background-color: #685F74;
-            width: 500px;
+            /* width: 500px; */
             height: 600px;
             text-align: center;
-            margin-left: 32%;
+            /* margin-left: 32%; */
             padding-top: 20px;
             border-radius: 5px;
             font-size: 15px;
@@ -77,6 +77,7 @@
             font-size: 17px;
             padding-left:40px;
             padding-top: 15px;
+            text-align: center;
 
             
         }
@@ -92,12 +93,13 @@
         </form>
 
         <div class="todos">Todos:
-            <table>
+            <table style="width: 100%">
                 <tr>
-                    <th>#</th>
-                    <th>Task</th>
-                    <th>Date</th>
-                    <th>Action</th>
+                    <th style="width: 5%">#</th>
+                    <th style="width: 10%">Task</th>
+                    <th style="width: 15%">context</th>
+                    <th style="width:50%">Date</th>
+                    <th style="width: 20%">Action</th>
                 </tr>
             </table>
         </div>
@@ -105,30 +107,27 @@
         <br />
         <br />
         <div class="todos">Done:
-            <table>
+            <table style="width: 100%">
                 <tr>
-                    <th>#</th>
-                    <th>Task</th>
-                    <th>Date</th>
-                    <th>Action</th>
+                    <th style="width: 5%">#</th>
+                    <th style="width: 10%">Task</th>
+                    <th style="width: 15%">context</th>
+                    <th style="width: 50%">Date</th>
+                    <th style="width: 20%">Action</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>安安</td>
-                    <td>2023-06-10</td>
-                    <td>新增 修改 刪除</td>
+                    <td style="width: 5%">1</td>
+                    <td style="width: 10%">安安</td>
+                    <td style="width: 15%">任務說明</td>
+                    <td style="width: 50%">2023-06-10</td>
+                    <td style="width: 20%">修改 刪除</td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>安安</td>
-                    <td>2023-06-10</td>
-                    <td>新增 修改 刪除</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>安安</td>
-                    <td>2023-06-10</td>
-                    <td>新增 修改 刪除</td>
+                    <td style="width: 5%">1</td>
+                    <td style="width: 10%">安安</td>
+                    <td style="width: 15%">任務說明</td>
+                    <td style="width: 50%">2023-06-10</td>
+                    <td style="width: 20%">修改 刪除</td>
                 </tr>
             </table>
 
