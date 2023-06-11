@@ -70,16 +70,17 @@
             border: 2px solid white;
             border-radius: 6px;
             text-align: center;
-            background-image: url('searchicon.png');
+            /* background-image: url('searchicon.png'); */
 
         }
-        td{
+
+        td {
             font-size: 17px;
-            padding-left:40px;
+            padding-left: 40px;
             padding-top: 15px;
             text-align: center;
 
-            
+
         }
     </style>
 </head>
@@ -87,8 +88,9 @@
 <body>
     <div id="" class="main">To Do List</div>
     <div id="" class="content">
-        <form>
-            <input type="text" id="text" placeholder="請輸入代辦事項">
+        <form action="./backend/APIs/task/content.php" method="post">
+            <input type="text" id="task" name="task" placeholder="請輸入代辦事項">
+            <input type="text" id="context" name="context" placeholder="文字說明">
             <input type="submit" value="Add" class="button">
         </form>
 
@@ -101,6 +103,7 @@
                     <th style="width:50%">Date</th>
                     <th style="width: 20%">Action</th>
                 </tr>
+                <?php require('./backend/APIs/task/content_1.php') ;?>
             </table>
         </div>
         <hr />
@@ -122,13 +125,6 @@
                     <td style="width: 50%">2023-06-10</td>
                     <td style="width: 20%">修改 刪除</td>
                 </tr>
-                <tr>
-                    <td style="width: 5%">1</td>
-                    <td style="width: 10%">安安</td>
-                    <td style="width: 15%">任務說明</td>
-                    <td style="width: 50%">2023-06-10</td>
-                    <td style="width: 20%">修改 刪除</td>
-                </tr>
             </table>
 
 
@@ -136,5 +132,6 @@
     </div>
     </div>
 </body>
-
+<script src="./js/lib/jquery.js"></script>
+<!-- <script src="./js/task.js"></script> -->
 </html>
